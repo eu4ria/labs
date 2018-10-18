@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body
+        {
+            padding:0;
+            margin:0;
+            font-family: sans-serif;
+            background: #e91e63
+        }
+        ul
+        {
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:20px 0;
+            background:#fff;
+            display:flex;
+            border-radius:10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        ul li
+        {
+            list-style: none;
+            text-align: center;
+            display:block;
+            border-right: 1px solid rgba(0,0,0,0.3);
+        }
+        ul li:last-child
+        {
+            border:none;
+        }
+        ul li a
+        {
+            padding: 0 50px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        ul li a .icon
+        {
+            width:40px;
+            height:40px;
+            text-align: center;
+            overflow:hidden;
+            margin:0 auto 10px;
+        }
+        ul li a .icon .fa
+        {
+            position: relative;
+            width:100%;
+            height:100%;
+            line-height:40px;
+            font-size:30px;
+            color:#000;
+            transition:0.5s;
+        }
+        ul li a .icon .fa:last-child
+        {
+            color:#e91e63;
+        }
+        ul li a:hover .icon .fa
+        {
+            transform: translateY(-40px);
+        }
+        ul li a .name
+        {
+            position: relative;
+            height:20px;
+            width: 100%;
+            display:block;
+            overflow: hidden;
+        }
+        ul li a .name span
+        {
+            display:block;
+            position: relative;
+            color:#000;
+            font-size:18px;
+            line-height: 20px;
+            transition: 0.5s;
+        }
+        ul li a .name span::before
+        {
+            content:attr(data-text);
+            position:absolute;
+            top:-100%;
+            left:0;
+            width:100%;
+            height:100%;
+            color:#e91e63;
+        }
+        
+        ul li a:hover .name span
+        {
+            transform:translateY(20px);
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="name" ><span data-text="Home">Home</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-file" aria-hidden="true"></i>
+                    <i class="fa fa-file" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="About">About</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <i class="fa fa-cogs" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Services">Services</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-images" aria-hidden="true"></i>
+                    <i class="fa fa-images" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Portfolio">Portfolio</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                    <i class="fa fa-users" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Team">Team</span></div>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <div class="icon">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <div class="name"><span data-text="Contact">Contact</span></div>
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
