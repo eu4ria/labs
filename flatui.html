@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FLAT UI Example</title>
+    <!-- <link rel="stylesheet" href="css/mystyles.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+ 
+    <style>
+        * {box-sizing:border-box;}
+        html, body
+        {
+            background:rgba(31,37,61,1);
+            font-family:'Roboto Condensed';
+            font-weight:300;
+            padding:20px;
+        }
+        .ui-component
+        {
+            border-radius:12px;
+            overflow:hidden;
+            font-size:16px;   
+            width:100%;
+            position:relative;
+            background:rgba(57,66,100,1);
+        }
+        .ui-component h2,
+        .ui-component h3
+        {
+            margin:0;
+            padding:0;
+            line-height:70px;
+            font-weight:500;
+            text-transform:uppercase;
+            text-align:center;
+            background:rgba(17,168,171,1);
+            color:rgba(255,255,255,1);
+        }
+        .ui-menubox ul
+        {
+            width:100%;
+            color:white;
+            margin:0;
+            padding:0;
+            list-style:none;    
+            
+        }
+        .ui-menubox ul li
+        {
+            width:100%;
+            padding:10px 0 10px 0;
+            height:60px;
+            border-bottom:1px solid rgba(31,37,61,1);
+            position:relative;
+            
+        }
+        .ui-menubox ul li::before
+        {
+            content:attr(data-fa-icon);
+            font-family: "Font Awesome 5 Free"; 
+            font-weight: 900;
+            height:60px;
+            position: absolute;
+            top:50%;
+            transform: translateY(-50%);
+            left:0;
+            overflow:hidden;
+            display:block; 
+            font-size:5em;
+            color:rgba(255,255,255,0.02);
+           
+        }
+        .ui-menubox ul li:hover i
+        {
+            opacity: 1;
+            transform: scale(1.25);
+            transition:0.1s ease-in;
+        }
+        .ui-menubox ul li:hover .ui-notification
+        {
+            background:rgba(204,50,75,1);
+        }
+
+        .ui-menubox ul li i
+        {
+            color:rgba(255,255,255,1);
+            opacity:0.4;
+            width:50px;
+            text-align:center;
+            padding:10px;
+        }
+        .ui-menubox ul li a
+        {
+            color:rgba(255,255,255,1);
+            text-decoration:none;
+            width:260px;
+            display:inline-block;
+        }
+
+        .ui-notification
+        {
+            background:rgba(80,89,123,1);
+            height:30px;
+            width:60px;
+            display:inline-block;
+            border-radius:9999px;
+            box-sizing:border-box;
+            line-height:30px;
+            text-align:center;
+            box-shadow: 0px 1px 0px rgba(0,0,0,04);
+        }
+    </style>
+
+
+
+  </head>
+  <body>
+
+    <div class='ui-component ui-menubox'>
+        <h2>Menubar</h2>
+        <ul>
+            <li data-fa-icon="&#xf0e0" data-title="Messages"><i class='far fa-envelope'></i><a href='#'>Messages</a><span class='ui-notification'>24</span></li>    
+            <li data-fa-icon="&#xf1d8" data-title="Invites"><i class='far fa-paper-plane'></i><a href='#'>Invites</a><span class='ui-notification'>3</span></li>    
+            <li data-fa-icon="&#xf073" data-title="Events"><i class='far fa-calendar-alt'></i><a href='#'>Events</a><span class='ui-notification'>7</span></li>    
+            <li data-fa-icon="&#xf013" data-title="Settings"><i class='fas fa-cog'></i><a href='#'>Settings</a></li>    
+            <li data-fa-icon="&#xf080" data-title="Statistics"><i class='far fa-chart-bar'></i><a href='#'>Statistics</a></li>    
+        </ul>
+    </div>
+
+
+
+</body>
+</html>

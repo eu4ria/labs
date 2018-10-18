@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Arvo:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,400,900" rel="stylesheet">
+ 
+    <title>Sticky Sections</title>
+    <style>
+        body
+        {
+            margin:0;
+            padding:0;
+            font-family: 'Poppins', sans-serif;
+            background:radial-gradient(#333333,#001122);
+            height:100vh;
+        }
+
+        .container
+        {
+            position: relative;
+            width:100%;
+
+        }
+        
+        .container section
+        {
+            position:sticky;
+            top:0;
+            width:100%;
+            height:100vh;
+            box-shadow: inner 0 0   10px black;
+            background-size: cover;
+        }
+        .container section:nth-child(1) 
+        {
+            background:url('http://unsplash.it/1300/761');
+            background-size: cover;
+        }
+        .container section:nth-child(2) 
+        {
+            background:url('http://unsplash.it/1300/762');
+            background-size: cover;
+        }
+        .container section:nth-child(3) 
+        {
+            background:url('http://unsplash.it/1300/763');
+            background-size: cover;
+        }
+        .container section:nth-child(4) 
+        {
+            background:url('http://unsplash.it/1300/764');
+            background-size: cover;
+        }
+        .container section:nth-child(5) 
+        {
+            background:url('http://unsplash.it/1300/765');
+            background-size: cover;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <section></section>
+        <!-- <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div>
+        <div class="section"></div> -->
+    </div>
+
+</body>
+</html>

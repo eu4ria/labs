@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Neon Titles</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style>
+        html, body
+        {
+            background: url('https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/171830/910/606/m1/fpnw/wm1/tjfe0qklkzsek8kxlxhihykgc6geinxz7upqgoni5jywsad8cnvoexmlcweiwtzz-.jpg?1409217926&s=2ffb0738b12bb3b8b2577581f0764fab');
+            font-family:'Quicksand';
+            background-size: cover;
+            width:100%;
+            height:100%;
+        }
+        .neon
+        {
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%,-50%);
+            margin:0;
+            padding:0 20px;
+            font-size: 6em;
+            color:plum;
+            text-shadow: 0 0 20px purple;
+        }
+        .neon::after
+        {
+            content:attr(data-text);
+            position: absolute;
+            top:0;
+            left:0;
+            padding:0 20px;
+            z-index: -1;
+            color:purple;
+        }
+        .neon::before
+        {
+            content:'';
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background: purple;
+            z-index: -2;
+            opacity:0.3;
+            filter:blur(50px);
+         }
+         .vignette
+         {
+            background: radial-gradient(rgba(0,0,0,0.9),rgba(0,0,0,1));
+            position: fixed;
+            left:0;
+            top:0;
+            width:100%;
+            height:100vh;
+            display:block;
+            
+         }
+    </style>
+
+
+
+  </head>
+  <body>
+    <div class="vignette"></div>
+    <h1 class="neon" data-text="[Neon]">[Neon]</h1>
+
+
+</body>
+</html>
