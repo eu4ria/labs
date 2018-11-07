@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        html
+        {
+            height:100%;
+        }
+        body
+        {
+            background:#fafafa;
+            color:#000;
+            margin:0;
+            padding:2em 2em 0 2em;
+            font-size:16px;
+            font-family: sans-serif;
+        }
+
+        article
+        {
+            overflow:hidden;
+            border-radius: 20px;
+            background:#fdfdfd;
+            box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.25);
+            margin-bottom: 2em;
+            padding-bottom: 2em;
+        }
+        .headerImage 
+        {
+            width: 100%;
+            height:400px;
+            padding-bottom: 20%;
+            overflow: hidden;
+            position: relative;
+            transition: all .8s;
+            background:url('http://unsplash.it/1300/400/?random');
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .headerImage::before
+        { 
+            content:'';
+            position:absolute; top:0;right:0;bottom:0;left:0;
+            background:inherit;
+            transition:inherit;
+        }
+        .headerImage:hover::before 
+        { 
+            transform: scale(1.1);
+        }
+
+        .content 
+        {
+            position: relative;
+            padding:20px;
+        }
+        h2
+        {
+            font-size:5em;
+            color:#fff;
+            margin-top:300px;
+            bottom:0;
+            left:0;
+            text-shadow: 0px 0px 2px black;
+        }       
+        h2 span
+        {
+            font-size:.25em;
+        }
+
+        h2 span::before
+        {
+            content:' by ';
+        }
+
+
+        .body
+        {
+            display:grid;
+            grid-template-columns: repeat(auto-fill,minmax(700px, 1fr));
+        }
+        p
+        {
+            margin:2em 1em 2em 1em;
+        }
+        
+
+
+</style>
+</head>
+<body>
+<article>
+    <div class="headerImage">
+        <div class="content"><h2>Some Title<span>Some Author</span></h2></div>
+    </div>
+    <div class="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+    </div>
+</article>
+<article>
+    <div class="headerImage">
+        <div class="content"><h2>Some Title<span>Some Author</span></h2></div>
+    </div>
+    <div class="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+    </div>
+</article>
+<article>
+    <div class="headerImage">
+        <div class="content"><h2>Some Title<span>Some Author</span></h2></div>
+    </div>
+    <div class="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+    </div>
+</article>
+<article>
+    <div class="headerImage">
+        <div class="content"><h2>Some Title<span>Some Author</span></h2></div>
+    </div>
+    <div class="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+    </div>
+</article>
+<article>
+    <div class="headerImage">
+        <div class="content"><h2>Some Title<span>Some Author</span></h2></div>
+    </div>
+    <div class="body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, perspiciatis! Porro mollitia, totam quod provident placeat dolores dicta iusto! Officia esse perferendis aperiam magni illo sed eum perspiciatis quam optio? Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic omnis quos dolorem modi dolore eius cupiditate fuga commodi quam magnam in enim rem, sed tenetur nobis blanditiis accusamus inventore cum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dolor perspiciatis totam aperiam sit animi placeat beatae. Esse eum quae voluptatem molestiae saepe obcaecati dolorem odit blanditiis, optio quisquam error.</p>
+    </div>
+</article>
+
+</body>
+</html>

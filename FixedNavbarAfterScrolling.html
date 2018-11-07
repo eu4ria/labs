@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin:0;
+            padding:0;
+            background:#000;
+            font-family: sans-serif;
+        }
+        header
+        {
+            color:#fff;
+            padding:10px 100px;
+            box-sizing:border-box;
+        }
+        section
+        {
+            width:100%;
+            height:100vh;
+        }
+        section.sec1
+        {
+            background:url("http://unsplash.it/1200/800/?random");    
+            background-size: cover;
+        }
+        section.sec2
+        {
+            padding:100px;
+            box-sizing: border-box;
+            height: auto;
+            color:#fff;
+        }
+        section.sec2 h2
+        {
+            font-size:3em;
+            margin:0;
+            padding:0 0 20px;
+            color:#fff;
+        }
+        section.sec2 p
+        {
+            font-size:1.2em;
+            margin:0;
+            padding:0;
+            color:#fff;
+        }
+        section.sec3
+        {
+            background:url("http://unsplash.it/1200/800/?random");    
+            background-size: cover;
+        }
+        nav
+        {
+            width:100%;
+            height:50px;
+            background:rgba(0,0,0,0.6);
+            position:sticky;
+            top:0;
+        }
+        nav ul
+        {
+            display:flex;
+            margin:0;
+            padding:0 100px;
+            float:right;
+        }
+        nav ul li
+        {
+            list-style: none;
+            overflow: hidden;
+            /* background:blue; */
+            width:150px;
+            text-align: center;
+            /* margin:10px 0 10px 0; */
+        }
+        nav ul li a
+        {
+            /* padding:0px 10px 20px 10px; */
+            display:block;
+            color:#fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            line-height: 50px;
+            transition: all 0.5s;
+            position: relative;
+            transition: 0.5s;
+            text-align: center;
+        }
+        nav ul li a::before
+        {
+            /* padding-left:0px; */
+            content:attr(data-text);
+            text-align: center;
+            position:absolute;
+            top:-50px;
+            color:white;
+            background:rgba(255,0,192,1);
+            display:block;
+            width:100%;
+            height:100%;
+        }
+        nav ul li a:hover
+        {
+            transition: 0.5s;
+            transform:translateY(50px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Website Name</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" data-text="Home" class="active">Home</a></li>
+            <li><a href="#" data-text="About">About</a></li>
+            <li><a href="#" data-text="Services">Services</a></li>
+            <li><a href="#" data-text="Portfolio">Portfolio</a></li>
+            <li><a href="#" data-text="Team">Team</a></li>
+            <li><a href="#" data-text="Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="sec1"></section>
+    <section class="sec2">
+        <h2>Pure CSS Navbar no Javascript</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lacinia metus, imperdiet varius purus. Maecenas quis euismod mi. Nam imperdiet et orci et laoreet. Nunc ut erat in sapien hendrerit vestibulum non non ex. Ut porttitor augue eu ullamcorper hendrerit. Ut fermentum placerat vulputate. Aliquam erat volutpat. Cras at pharetra dui, ut porttitor justo. Nam porta mattis tortor, non sagittis sapien tristique at.</p>
+<p>Vivamus tincidunt viverra diam, ac faucibus lectus elementum id. Aliquam convallis sapien quam, in placerat nunc rutrum sit amet. Maecenas rhoncus, elit ac ornare finibus, arcu neque bibendum orci, a placerat arcu augue non ex. Sed sit amet erat id quam imperdiet suscipit eu et tortor. Morbi sit amet feugiat est, non mattis eros. Vivamus quis dignissim magna. Donec egestas eleifend justo, eget iaculis quam feugiat sed. Nunc hendrerit interdum mi, sit amet congue arcu. Morbi varius eget nibh dictum gravida.</p>
+<p>Etiam auctor, elit eu pharetra bibendum, metus mauris volutpat metus, at maximus dui enim in augue. Mauris et suscipit sem, fringilla faucibus est. Etiam lobortis nec est quis tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus vehicula nunc quis vulputate congue. Vestibulum ac sem viverra, egestas mauris quis, dignissim lectus. Cras at eros ut arcu elementum vestibulum. Quisque id augue ex. Ut sed leo arcu. Curabitur ullamcorper dui eu justo ullamcorper imperdiet. Phasellus condimentum, quam sed fringilla tristique, purus lacus maximus dui, sit amet sodales tellus massa vitae sapien. Integer finibus nunc lectus, vel ullamcorper quam ullamcorper ac.</p>
+<p>Sed vel commodo mauris, quis faucibus est. Sed elit risus, rutrum ut mauris in, vulputate scelerisque tortor. Sed semper facilisis varius. Mauris in pellentesque nibh, ut fermentum risus. Sed massa risus, aliquet sit amet mi sed, volutpat tristique lectus. Integer eget tellus nulla. Vestibulum placerat semper lorem id sodales. Morbi interdum lectus arcu, sed tincidunt tellus varius ac. Mauris finibus turpis nec viverra tincidunt. Morbi dictum leo sit amet erat commodo, eget aliquam risus posuere. Aliquam euismod sed mauris eget venenatis. Integer sem ex, scelerisque placerat imperdiet sit amet, tempor vitae nisi.</p>
+<p>Etiam pretium ligula libero, quis congue nibh bibendum et. Sed in neque sit amet lorem imperdiet sodales. Quisque aliquam, arcu id tempus dictum, metus ante malesuada urna, in imperdiet magna neque in tellus. Praesent sit amet mauris pharetra, molestie est et, facilisis sem. Donec feugiat, libero at convallis fringilla, orci purus euismod leo, eu placerat nisi risus in urna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas sed auctor sapien, id tincidunt tellus.</p>
+    </section>
+    <section class="sec3"></section>
+</body>
+</html>
